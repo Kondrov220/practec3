@@ -255,28 +255,34 @@
     </table>
     <form action="">
         <div>
-            <h2>
-                ваше ставленя до автора 
-            </h2>
-            <ul>
-                <li><input type="checkbox"  id="hhhh"><label for="hhhh">незнаю</label></li>
-                <li><input type="checkbox" id="hhhh"><label for="hhhh">він молодець</label></li>
-                <li><input type="checkbox" id="hhhh"><label for="hhhh">він гарно вчиться</label></li>
-            </ul>
+            <label for="number">оберіть число</label>
+            <input list="number" />
+
+            <datalist id="number">
+                <option>one</option>
+                <option>two</option>
+                <option>three</option>
+                <option>four</option>
+                <option>fife</option>
+              </datalist>
         </div>
         <div>
-            <h2>
-                який бал ви поставите автору (можете не відповідати я це не побачу)
-            </h2>
-            <ul>
-                <li><input type="radio" name="notes"><label for="">що це за опитування?</label></li>
-                <li><input type="radio" name="notes"><label for="">найнижчу</label></li>
-                <li><input type="radio" name="notes"><label for="">середню</label></li>
-                <li><input type="radio" name="notes"><label for="">гарну</label></li>
-                <li><input type="radio" name="notes"><label for="">найкращу</label></li>
-                <li><input type="radio" name="notes"><label for="">автор молодець але є проблеми</label></li>
-            </ul>
+            <label>
+                напишіть число від 1 до 5 
+                <input type="number" value="3" min="1" max="5">
+            </label>
         </div>
+        <fieldset>
+            <legend>Enter your contact details</legend>
+            <label>
+              імя
+              <input type="text" name="username" />
+            </label>
+            <label>
+              призвище
+              <input type="text" name="firstname" />
+            </label>
+          </fieldset>
     </form>
 </body>
 </html>
